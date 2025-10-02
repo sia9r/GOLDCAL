@@ -200,10 +200,8 @@
                 let error = (finalPrice - T) / T * 100;
                 if (error >= 0 && error <= tolerance * 100) {
                     let roundedPrice = roundUpToSelected(finalPrice);
-                    answer = `✅ جواب پیدا شد:<br>
-                        قیمت محاسبه شده: ${finalPrice.toLocaleString()} تومان<br>
-                        قیمت رند شده به بالا: <span class="round-price">${roundedPrice.toLocaleString()} تومان</span><br>
-                        وزن: ${weight.toFixed(2)} گرم<br>
+                    answer = `✅ :<br>
+                       
                         قیمت هر گرم طلای ۱۸: <b>${pricePerGram.toLocaleString()}</b> تومان<br>
                         خطا: ${error.toFixed(3)}٪`;
                     found = true;
